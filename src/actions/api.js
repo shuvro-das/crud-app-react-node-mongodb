@@ -5,7 +5,7 @@ import axios from "axios";
 const baseUrl = "https://react-nodejs-crud-app.herokuapp.com/";
 
 export default {
-  postMessage(url = baseUrl) {
+  postMessage(url = baseUrl + "") {
     return {
       fetchAll: () => axios.get(url),
       fetchById: (id) => axios.get(url + id),
