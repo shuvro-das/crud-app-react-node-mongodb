@@ -2,7 +2,7 @@
 
 import axios from "axios";
 
-const baseUrl = "https://react-nodejs-crud-app.herokuapp.com/postMessages";
+const baseUrl = "https://react-nodejs-crud-app.herokuapp.com/";
 
 export default {
   postMessage(url = baseUrl + "") {
