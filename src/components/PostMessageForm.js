@@ -54,7 +54,7 @@ const PostMessageForm = ({ classes, ...props }) => {
     setErrors({
       ...temp,
     });
-    return Object.values(temp).every((x) => x == "");
+    return Object.values(temp).every((x) => x === "");
   };
 
   const handleSubmit = (e) => {
@@ -73,7 +73,7 @@ const PostMessageForm = ({ classes, ...props }) => {
       resetForm();
     };
     if (validate()) {
-      if (props.currentId == 0) {
+      if (props.currentId === 0) {
         props.createPostMessage(values, onSuccess);
       } else {
         props.updatePostMessage(props.currentId, values, onSuccess);
